@@ -10,7 +10,7 @@ public class RibbonDecorator extends ItemDecorator{
 
     @Override
     public String getDescription() {
-        return "To" + decoratedItem.getName() + "the ribbon was added";
+        return "To " + decoratedItem.getName() + " the ribbon was added";
     }
 
     @Override

@@ -2,7 +2,6 @@ package ua.ucu.edu.demo;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import ua.ucu.edu.demo.decorator.BasketDecorator;
 import ua.ucu.edu.demo.order.Item;
@@ -26,7 +25,7 @@ class BasketDecoratorTest {
         BasketDecorator basketDecorator = new BasketDecorator(item);
         String description = basketDecorator.getDescription();
 
-        assertTrue(description.contains("TestItem was put in the basket"));
+        assertEquals("TestItem was put in the basket", description);
     }
 
     @Test

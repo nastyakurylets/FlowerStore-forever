@@ -25,7 +25,7 @@ class RibbonDecoratorTest {
         RibbonDecorator ribbonDecorator = new RibbonDecorator(item);
         String description = ribbonDecorator.getDescription();
 
-        assertTrue(description.contains("To TestItem the ribbon was added"));
+        assertEquals("To TestItem the ribbon was added", description);
     }
 
     @Test

@@ -1,6 +1,5 @@
 package ua.ucu.edu.demo.decorator;
 
-import lombok.AllArgsConstructor;
 import ua.ucu.edu.demo.order.Item;
 
 public class PaperDecorator extends ItemDecorator{
@@ -11,7 +10,7 @@ public class PaperDecorator extends ItemDecorator{
 
     @Override
     public String getDescription() {
-        return decoratedItem.getName() + "was wrapped in paper";
+        return decoratedItem.getName() + " was wrapped in paper";
     }
 
     @Override

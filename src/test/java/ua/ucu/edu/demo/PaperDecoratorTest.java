@@ -1,7 +1,6 @@
 package ua.ucu.edu.demo;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import ua.ucu.edu.demo.decorator.PaperDecorator;
 import ua.ucu.edu.demo.order.Item;
@@ -25,7 +24,7 @@ class PaperDecoratorTest {
         PaperDecorator paperDecorator = new PaperDecorator(item);
         String description = paperDecorator.getDescription();
 
-        assertTrue(description.contains("TestItem was wrapped in paper"));
+        assertEquals("TestItem was wrapped in paper", description);
     }
 
     @Test
